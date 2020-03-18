@@ -1,0 +1,17 @@
+@media(max-width: 575px){
+    .h{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .gallery__item-title{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .gallery__item-button, .gallery__item-button:hover {
+        margin-top: 1.5rem;
+    }
+    .categories{
+        background-color:#464A4D;
+        padding:1rem 0 0 0;
+    }
+}

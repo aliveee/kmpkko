@@ -1,0 +1,16 @@
+#input {border:none; margin:0; padding:0; border:0}
+.te {border:1px solid #bbb; padding:0 1px 1px; font:12px Verdana,Arial;}
+.te iframe {border:none}
+.teheader {height:31px !important; border-bottom:1px solid #bbb; background:url(/inc/advanced/tinyeditor/images/header-bg.gif) repeat-x !important; padding-top:1px}
+.teheader select {float:left; margin-top:5px}
+.tefont {margin-left:12px}
+.tesize {margin:0 3px}
+.testyle {margin-right:12px}
+.tedivider {float:left; width:1px; height:30px !important; background:#ccc}
+.tecontrol {float:left; width:34px; height:30px !important; cursor:pointer; background-image:url(/inc/advanced/tinyeditor/images/icons.png) !important;}
+.tecontrol:hover {background-color:#fff !important; background-position:30px 0}
+.tefooter {height:32px !important; border-top:1px solid #bbb; background:#f5f5f5 !important;}
+.toggle {float:left; background:url(images/icons.png) -34px 2px no-repeat !important; padding:9px 13px 0 31px; height:23px !important; border-right:1px solid #ccc; cursor:pointer; color:#666}
+.toggle:hover {background-color:#fff !important}
+.resize {float:right; height:32px !important; width:32px; background:url(/inc/advanced/tinyeditor/images/resize.gif) 15px 15px no-repeat !important; cursor:s-resize}
+#editor {cursor:text; margin:10px}

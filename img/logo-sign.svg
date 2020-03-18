@@ -1,0 +1,23 @@
+<svg width="108" height="144" viewBox="0 0 108 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 72L54 0L108 72V134L54 143L0 134V72ZM98 74L54 16L10 74V84.6667L54 26L98 84.6667V74ZM10 100L54 42L98 100V110.667L54 52L10 110.667V100ZM98 126L54 68L10 126L54 134L98 126Z" fill="#FF9100"/>
+    <rect x="46" y="96" width="16" height="6" fill="#464A4D"/>
+    <path d="M46 96H54L62 102H54V96L46 102V96Z" fill="#2F3133"/>
+    <rect x="36" y="106" width="16" height="6" fill="#464A4D"/>
+    <path d="M36 106H44L52 112H44V106L36 112V106Z" fill="#2F3133"/>
+    <rect x="26" y="116" width="16" height="6" fill="#464A4D"/>
+    <path d="M26 116H34L42 122H34V116L26 122V116Z" fill="#2F3133"/>
+    <rect x="46" y="116" width="16" height="6" fill="#464A4D"/>
+    <rect x="66" y="116" width="16" height="6" fill="#464A4D"/>
+    <rect x="56" y="106" width="16" height="6" fill="#464A4D"/>
+    <path d="M56 106H64L72 112H64V106L56 112V106Z" fill="#2F3133"/>
+    <path d="M46 116H54L62 122H54V116L46 122V116Z" fill="#2F3133"/>
+    <path d="M66 116H74L82 122H74V116L66 122V116Z" fill="#2F3133"/>
+    <path d="M54 26V42L98 100L108 108L54 26Z" fill="#FF6600"/>
+    <path d="M54 0V16L98 74L108 82L54 0Z" fill="#FF6600"/>
+    <path d="M54 52V68L98 126L108 134L54 52Z" fill="#FF6600"/>
+    <path d="M0 108V134L54 52L10 110.667V100L0 108Z" fill="#FF6600"/>
+    <path d="M54 143L98 126L54 134V143Z" fill="#FF6600"/>
+    <path d="M54 0L0 72V82L54 0Z" fill="#FF6600"/>
+    <path d="M0 108L54 26L10 84.6667V74L0 82V108Z" fill="#FF6600"/>
+    <path d="M0 134L54 143L10 126L0 134Z" fill="#FF6600"/>
+</svg>

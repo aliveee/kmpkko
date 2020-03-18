@@ -1,0 +1,21 @@
+<?php
+define("DEBUG",true);
+define("APPMODE","dev");
+define("SUBDOMAIN","stp");
+define("DOMAIN","loc");
+define("PROTOCOL","http");
+
+define("DB_USER", "root");
+define("DB_PASS", "");
+define("DB_NAME", "stp");
+define("DB_HOST", "localhost");
+//define('DB_PORT', 5432);
+
+define("ROOT_PATH", "");
+define("DOCUMENT_ROOT", $_SERVER["DOCUMENT_ROOT"]);
+define("HTTP_HOST", $_SERVER['HTTP_HOST']);
+
+define('DB_STR', 'host='.DB_HOST.' dbname='.DB_NAME.' user='.DB_USER.' password='.DB_PASS);
+define(PRX,'stp_');
+
+define(DEBUG,true);

@@ -1,0 +1,34 @@
+@media(max-width: 1199px) {
+    .nav__hidden {
+        width: 0;
+        padding: 0;
+        border:none;
+        position: relative;
+    }
+    .nav__hidden ul {
+        position: absolute;
+        width: 275px;
+        background: #fff;
+        flex-wrap: wrap;
+        z-index: 1;
+        top: 100%;
+        right: 0;
+        height: 0;
+        padding: 0 0.5rem;
+        overflow: hidden;
+        transition:all 0.3s;
+    }
+    .nav__hidden.active ul{
+        height: 136px;
+        box-shadow: 0 5px 5px 3px rgba(0,0,0,0.2);
+        transition:all 0.3s;
+        padding: 0.5rem;
+    }
+    .nav__hidden ul li{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .nav__hidden.active ul li{
+    }
+}

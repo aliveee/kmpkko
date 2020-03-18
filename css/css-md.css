@@ -1,0 +1,111 @@
+@media(max-width:767px) {
+    .h {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .categories{
+        padding:1.5rem 0 0.5rem 0;
+    }
+    .about{
+        padding: 2rem 0;
+    }
+    .about__container {
+        padding: 1.5rem;
+    }
+    .about__logo-wrp{
+        width:80px;
+        height: 80px;
+    }
+    .about__title{
+        margin-bottom:0;
+    }
+    .about__logo-wrp img{
+        width:27px;
+    }
+    .gallery__item .row{
+        min-height: 240px;
+    }
+    .gallery__item-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .gallery__item-button, .gallery__item-button:hover {
+        margin-top: 2rem;
+    }
+    .works{
+        padding:2rem 0;
+    }
+    .works__item-title{
+        padding:1rem 1rem 3rem 1rem;
+        text-align:center;
+        display: block;
+        min-height: 80px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .works__gallery{
+        margin-bottom:0!important;
+    }
+    .works .slick-dots{
+        bottom:1rem;
+    }
+    .works .slick-dots li button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:0;
+    }
+    .works .slick-dots li button:before{
+        content:"";
+        display: block;
+        width:0.75rem;
+        height:0.75rem;
+        background-color: #fff;
+        opacity: 1;
+        margin:0;
+        position: static;
+        border:2px solid #464A4D;
+    }
+    .works .slick-dots li.slick-active button:before{
+        border:0;
+        background-color: #F04848;
+    }
+    .request {
+        padding: 2rem 0;
+    }
+    .request form .form-control, .request form .custom-select{
+        height: 40px;
+    }
+    .previews {
+        padding: 2rem 0 0;
+    }
+    .preview{
+        margin-bottom:1rem;
+    }
+    .preview__img{
+        width:80px;
+    }
+    .preview__title{
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom:0;
+        text-transform: uppercase;
+    }
+    .p-md-24{
+        padding:1.5rem!important;
+    }
+    .product-info__img-wrp{
+        margin:-1rem 0 0;
+        padding:0;
+    }
+    .product-info__img-wrp img{
+        width:100%;
+    }
+    .product-content{
+        padding:2rem 0;
+    }
+}

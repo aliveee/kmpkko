@@ -1,0 +1,12 @@
+input.error { border: 1px solid red; }
+div.error {
+/*	background: url('images/unchecked.gif') no-repeat;
+	padding-left: 16px;
+    margin:0px 0px 15px 10px;*/
+}
+div.valid {
+	background: url('images/checked.gif') no-repeat;
+	display: block;
+	width: 16px;
+	height: 16px;
+}

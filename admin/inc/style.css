@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+html, body { height:100%; margin:0px; padding:0px; }
+html, iframe { border:none; }
+form, p { margin:0; }
+img {	border:none; }
+textarea { overflow:auto; }
+table { border-collapse:collapse; /* cellspacing="0" */ }
+td, th { padding:0px; /* cellpadding="0" */ } 
+input, select, textarea, img { vertical-align:middle; }
+label { cursor:pointer; }
+
+body,td,th,input,select,textarea {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+body {
+	background-color:#FFF;
+	color:#0A0A0A;
+}
+
+.lnkPages { word-spacing:10px; }
+.add_form {cursor:pointer; padding:10px}
+.cke_editor td, .cke_editor th { padding:0!important; }
+
+a { text-decoration:none; color:#003399; }
+a:hover { text-decoration:underline; color:#FF6600; }
+a.active { color:#FF6600; }
+
+.lnk_left a, div.lnk_top a { font-weight:bold; }
+.lnk_left a { padding:2px 0 2px 24px; margin:5px 0; background:url(/admin/img/bg_diz.png) no-repeat; display:block; }
+
+.c2 { color:#808080; }
+.cb, .cb *, .cb:hover, .cb *:hover { color:#000; }
+.cg, .cg *, .cg:hover, .cg *:hover { color:#808080; }
+.cr, .cr *, .cr:hover, .cr *:hover { color:#FF0000; }
+.cw, .cw *, .cw:hover, .cw *:hover { color:#FFF; }
+
+
+div.lnk_top { text-align:center; border-bottom:1px solid #CCCCCC; margin:3px 0 14px; padding-bottom:12px; color:#003399; }	
+
+input.btn { width:90px !important; padding-left:16px; background-image:url(/admin/img/bg_icons.png); background-repeat:no-repeat; }
+
+a.la16 { background:url(/admin/img/bg_icons.png) no-repeat; display:inline-block; vertical-align:middle; width:16px; height:16px; margin:0 2px; }
+a.la { padding:0 0 2px 22px; background:url(/admin/img/bg_icons.png) no-repeat; }
+a.laAdd { background-position:0 -128px; }
+a.laRed { background-position:0 -160px; }
+a.laDel { background-position:0 -192px; }
+a.laUp { background-position:0 -224px; }
+a.laDown { background-position:0 -256px; }
+a.laMove { background-position:0 -288px; cursor:move; }
+
+table.content { margin-top:15px; }
+table.content th { color:#808080; font-weight:bold; text-align:left; }
+table.content td, table.content th { padding:5px 10px; border-bottom:#E4E4E4 solid 1px; }
+table.content tr:hover td, table.content tr.second:hover td { background-color:#EAFAFF; }
+table.content tr.active td { background-color:#FFFFD5!important; }
+/*table.content tr:nth-child(even) { background-color:#F8F8F8; } --пришлось не использовать, т.к. проблемы с <tbody>-- */
+table.content tr.second td { background-color:#F8F8F8; }
+table.content tr.hover td { background-color:#EAFAFF; }
+table.content th.sort { background:url(/admin/img/bg_icons.png) no-repeat; cursor:pointer; padding-left:35px; }
+
+table.red th { color:#808080; background-color:#E8EBF1; text-align:right; font-weight:bold; white-space:nowrap; }
+table.red td, table.red th { padding:4px 6px; border:1px solid #CDD7DF; }
+table.red td { width:100%; }
+table.red .tab_no_borders td {width:auto;}
+table.red input, table.red select, table.red textarea { width:98%; //width:96%; }
+/*table.red input[type="checkbox"], table.red input[type="radio"] { width:auto; }*/
+table.horiz th { font-weight:normal; text-align:center; }
+table.horiz td { width:auto; }
+table.vert th { font-weight:normal; }
+
+table.red2 { margin-bottom:2px; }
+table.red2 th { color:#808080; white-space:nowrap; font-weight:normal; text-align:left; }
+table.red2 td, table.red2 th { padding:2px 4px; }
+table.red2 td { width:100%; }
+table.red2 input, table.red2 select, table.red2 textarea { width:98%; //width:96%; }
+/*table.red2 input[type="checkbox"], table.red2 input[type="radio"] { width:auto; }*/
+
+.lupa { cursor:url("/admin/img/zoomin.cur"), pointer; }
+
+.center { text-align:center !important; }
+.normal, .fwn { font-weight:normal !important; }
+
+/************ к примеру №3 ********************/
+#colorSelector {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    background: url(/admin/img/colorpicker/images/select.png);
+}
+#colorSelector div {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 30px;
+    height: 30px;
+    background: url(/admin/img/colorpicker/images/select.png) center;
+}
+
+.uzel_add, .info-det {
+    display: flex;
+}
+.uzel {
+    border: 1px solid #ccc;
+    padding:20px;
+    margin-bottom:20px;
+}
+.photo-uzel,.number-detail {margin-left:20px;}
+.add_uzel {margin:10px 0px;} 
+.info-det {margin-bottom:10px;}
+.name-detail, .name-uzel{width:50%;}

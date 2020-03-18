@@ -1,0 +1,26 @@
+@media (max-width:575px){
+    .breadcrumbs {
+        padding:0.25rem 0 0
+    }
+    .product-info .bg-light-grey{
+        background-color: white;
+        padding: 1rem!important;
+    }
+    .product-content__more{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.25px;
+        color: #2F3133;
+        border-bottom:1px dashed #2F3133;
+        text-decoration: none;
+    }
+    .product-content__more:hover{
+        border:none;
+        color: #2F3133;
+        text-decoration: none;
+    }
+    .product-content__main{
+        display:none;
+    }
+}
