@@ -26,7 +26,7 @@
                                 <a class="header__contact email" href="mailto:<?=contact_email?>"><?=$settings->contact_email?></a>
                             </div>
                             <div class="col-auto mt-3 d-block d-lg-none">
-                                <a class="header__contact location" href="javascript:;"><?=$settings->footer_address?></a>
+                                <a class="header__contact location" href="javascript:;"><?=$settings->contact_address?></a>
                             </div>
                         </div>
                         <div class="mt-4 d-block d-lg-none text-center mb-4">
