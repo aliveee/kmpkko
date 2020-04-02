@@ -12,7 +12,6 @@ class Good extends \Action\Base
         //array_shift($qs);
         //print_r($qs);
         $catalog_model = new \Model\Common\Catalog();
-
         if(!SHORT_URL_MODE) {
             $catalog = $catalog_model->getBySlugs(array_slice($qs, 0, count($qs) - 1));
             if ($catalog === false) {

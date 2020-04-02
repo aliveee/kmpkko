@@ -14,7 +14,7 @@
             <div class="col-12 col-lg-8">
                 <h1 class="h d-none d-lg-block"><?=@$page["h1"]?></h1>
                 <?=$catalog["text"]?>
-                <a href="#" class="mt-32 btn btn-primary">Отправить запрос</a>
+                <a href="#request_form" class="mt-32 btn btn-primary">Отправить запрос</a>
             </div>
         </div>
     </div>

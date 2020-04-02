@@ -29,7 +29,11 @@ class Catalog extends \Action\Base
         }
 
         if($catalog===false) {
-            return (new Good())->execute();
+            $r = (new Good())->execute();
+            if(!$r){
+                (new Page())->gotoErrorPage();
+            }else
+                return $r;
         }
 
         if($catalog){

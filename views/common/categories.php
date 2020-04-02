@@ -1,4 +1,4 @@
-<div class="subcategories">
+<div class="subcategories  d-none d-md-block">
     <div class="container">
         <div class="row"><?
             foreach($catalog_menu as $_catalog) {

@@ -1,5 +1,6 @@
 <div class="request">
     <div class="container">
+        <a name="request_form"></a>
         <form action="">
             <div class="h text-center mb-4">Запрос стоимости</div>
             <div class="row">

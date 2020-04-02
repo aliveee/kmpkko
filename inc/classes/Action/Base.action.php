@@ -22,7 +22,7 @@ class Base
             $page_action->gotoErrorPage();
             exit;
         }else {
-            //echo "111";
+            //echo $action. get_class($this). ":";
             return $this->$action();
         }
     }
