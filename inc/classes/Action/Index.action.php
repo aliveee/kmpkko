@@ -14,7 +14,7 @@ class Index extends \Action\Base
             array_merge($common_data,
                 array(
                     "banners" => (new \Model\Common\Banner())->getMain(5),
-                    "catalog_menu" => (new \Model\Common\Catalog())->getMenu(),
+                    "catalog_menu" => (new \Model\Common\Catalog())->getMenu(true),
                     "page_type"=>"home"
                 )
             )

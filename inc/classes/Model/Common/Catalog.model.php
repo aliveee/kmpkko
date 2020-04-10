@@ -67,11 +67,11 @@ class Catalog extends \Model\Base
     }
 
     //рассчитано только на 3 уровня
-    public function getMenu(){
+    public function getMenu($is_main=false){
         //$max_level = 4;
         $menu = array();
 
-        $res = $this->getAll("SELECT id,id_parent,ids_parent,name,link,image,sort,path,ids_path,`level` FROM {$this->table} WHERE hide=0 ORDER BY `level`,sort");
+        $res = $this->getAll("SELECT id,id_parent,ids_parent,name,link,image,sort,path,ids_path,`level` FROM {$this->table} WHERE hide=0 ".($is_main?" and is_main=1 ":"")." ORDER BY `level`,sort");
 
             foreach($res as $item){
                 if(!$item["ids_path"])
@@ -109,8 +109,8 @@ class Catalog extends \Model\Base
         return $this->getAll("SELECT id,name, path,link FROM {$this->table} WHERE find_in_set(id,'{$catalog_ids}') and hide=0 ORDER BY level");
     }
 
-    public function getSubcategories($id){
-        return $this->getAll("SELECT id,name,path,link,introtext FROM {$this->table} WHERE id_parent='{$id}' and hide=0 ORDER BY level,sort");
+    public function getSubcategories($id, $is_main=false){
+        return $this->getAll("SELECT id,name,path,link,introtext FROM {$this->table} WHERE id_parent='{$id}' and hide=0 ".($is_main?" and is_main=1 ":"")." ORDER BY level,sort");
     }
 
     /*

@@ -174,6 +174,10 @@ switch($show)
 					<th>Скрыть</th>
 					<td><input name="hide" type="checkbox" <?=$row['hide'] ? 'checked' : ''?> style="width:auto;" value="1"></td>
 				</tr>
+                <tr>
+                    <th>На главной</th>
+                    <td><input name="is_main" type="checkbox" <?=$row['is_main'] ? 'checked' : ''?> style="width:auto;" value="1"></td>
+                </tr>
 				<tr>
 					<th>title</th>
 					<td><input name="title" value='<?=$row['title']?>'></td>
@@ -208,6 +212,7 @@ switch($show)
 				<th style="padding-right:0;"><a href="javascript:toAjax('?action=open_ids&open_ids=<?=$open_ids=='all' ? 0 : 'all'?>')" class="la16" style="background-position:0 -<?=$open_ids=='all' ? 720 : 672?>px;"></a></th>
 				<th sort="<?=getSort('name')?>">Название</th>
 				<th sort="<?=getSort('hide')?>">Скрыть<div style="padding-right:25px;" align="center"><input type="checkbox" onClick="event.cancelBubble=true; if(sure()) { setCbTable(this,true); } else  return false;"></div></th>
+                <th sort="<?=getSort('is_main')?>">На главной<div style="padding-right:25px;" align="center"><input type="checkbox" onClick="event.cancelBubble=true; if(sure()) { setCbTable(this,true); } else  return false;"></div></th>
 				<th>Ссылка</th>
 				<th></th>
 			</tr>
@@ -251,6 +256,7 @@ switch($show)
 						<a href="goods.php?id_catalog=<?=$id?>"><?=$row['name']?></a> <span class="normal cg" title="Количество товаров в разделе / включая подразделы">(<?=(int)$count[$id].(($c=getCountGoods($id, $tree, $count)) == $count[$id] ? '' : ' / '.(int)$c)?>)</span>
 					</td>
 					<td align="center"><input type="checkbox" <?=($row['hide'] ? 'checked' : '')?> onClick="toAjax('?action=redone&id=<?=$id?>&field=hide&value='+(this.checked ? 1 : 0))"></td>
+                    <td align="center"><input type="checkbox" <?=($row['is_main'] ? 'checked' : '')?> onClick="toAjax('?action=redone&id=<?=$id?>&field=is_main&value='+(this.checked ? 1 : 0))"></td>
 					<td><a href="<?=\Lib\CatalogHelper::GetUrl('',$row["link"])?>" title="/<?=id2links($id)?>">открыть</a></td>
 					<td align="right"><?=lnkAction(($vetka['level']==$lastlevel ? 'Move' : 'UpDown').',Red,Del')?></td>
 				</tr>
