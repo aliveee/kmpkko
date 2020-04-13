@@ -1,7 +1,7 @@
 <?php
 
 ob_start();
-//print_r($goods);
+//print_r($catalog_menu);
 include DOCUMENT_ROOT.'/views/common/breadcrumbs.php';
 
 if(!$catalog_home)

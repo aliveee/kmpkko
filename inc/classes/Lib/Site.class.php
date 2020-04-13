@@ -19,7 +19,7 @@ class Site
     {
         if (!self::$data || $force) {
             $catalog_model = new Catalog();
-            $catalog_menu = $catalog_model->getMenu();
+            $catalog_menu = $catalog_model->getMenu(true);
             $counter_model = new Counter();
             $page_model = new Page();
             $qs = (App::get("qs"));
