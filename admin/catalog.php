@@ -178,6 +178,10 @@ switch($show)
                     <th>На главной</th>
                     <td><input name="is_main" type="checkbox" <?=$row['is_main'] ? 'checked' : ''?> style="width:auto;" value="1"></td>
                 </tr>
+                <tr>
+                    <th>Нижнее<br/>меню</th>
+                    <td><input name="menu_down" type="checkbox" <?=$row['menu_down'] ? 'checked' : ''?> style="width:auto;" value="1"></td>
+                </tr>
 				<tr>
 					<th>title</th>
 					<td><input name="title" value='<?=$row['title']?>'></td>
@@ -213,6 +217,7 @@ switch($show)
 				<th sort="<?=getSort('name')?>">Название</th>
 				<th sort="<?=getSort('hide')?>">Скрыть<div style="padding-right:25px;" align="center"><input type="checkbox" onClick="event.cancelBubble=true; if(sure()) { setCbTable(this,true); } else  return false;"></div></th>
                 <th sort="<?=getSort('is_main')?>">На главной<div style="padding-right:25px;" align="center"><input type="checkbox" onClick="event.cancelBubble=true; if(sure()) { setCbTable(this,true); } else  return false;"></div></th>
+                <th sort="<?=getSort('menu_down')?>">Нижнее<br/>меню<div style="padding-right:25px;" align="center"><input type="checkbox" onClick="event.cancelBubble=true; if(sure()) { setCbTable(this,true); } else  return false;"></div></th>
 				<th>Ссылка</th>
 				<th></th>
 			</tr>
@@ -257,6 +262,7 @@ switch($show)
 					</td>
 					<td align="center"><input type="checkbox" <?=($row['hide'] ? 'checked' : '')?> onClick="toAjax('?action=redone&id=<?=$id?>&field=hide&value='+(this.checked ? 1 : 0))"></td>
                     <td align="center"><input type="checkbox" <?=($row['is_main'] ? 'checked' : '')?> onClick="toAjax('?action=redone&id=<?=$id?>&field=is_main&value='+(this.checked ? 1 : 0))"></td>
+                    <td align="center"><input type="checkbox" <?=($row['menu_down'] ? 'checked' : '')?> onClick="toAjax('?action=redone&id=<?=$id?>&field=menu_down&value='+(this.checked ? 1 : 0))"></td>
 					<td><a href="<?=\Lib\CatalogHelper::GetUrl('',$row["link"])?>" title="/<?=id2links($id)?>">открыть</a></td>
 					<td align="right"><?=lnkAction(($vetka['level']==$lastlevel ? 'Move' : 'UpDown').',Red,Del')?></td>
 				</tr>

@@ -41,7 +41,7 @@ class Site
                 "page" => $page,
                 "path" => $path,
                 "menu" => $page_model->getMenu(),
-                "footer_menu" => $page_model->getFooterMenu(true),
+                "footer_menu" => $page_model->getFooterMenu(),
                 "settings"=>App::get("settings")
             );
             self::$data = $result;
