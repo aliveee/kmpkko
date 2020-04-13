@@ -81,24 +81,27 @@ class Catalog extends \Action\Base
             //апдейтим мета данные по шаблонам метаданных их настроек
             $common_data = $site->getCommonFrontendData();
             if(!$common_data["page"]["title"]) {
-                $t = \Lib\App::get("settings")->title_category_template;
+                $common_data["page"]["title"] = $catalog["title"]? $catalog["title"]:$catalog["name"];
+                /*$t = \Lib\App::get("settings")->title_category_template;
                 $common_data["page"]["title"] =
                     $catalog["title"]?
                         $catalog["title"]:
-                        ($t?\Lib\Helper::parseThroughTemplate($t, ["name"=>$catalog["name"]]):$catalog["name"]);
+                        ($t?\Lib\Helper::parseThroughTemplate($t, ["name"=>$catalog["name"]]):$catalog["name"]);*/
             }
 
             if(!$common_data["page"]["keywords"]) {
-                $t = \Lib\App::get("settings")->keywords_category_template;
+                $common_data["page"]["keywords"] = $catalog["keywords"]? $catalog["keywords"]:$catalog["name"];
+                /*$t = \Lib\App::get("settings")->keywords_category_template;
                 $common_data["page"]["keywords"] = $catalog["keywords"]?
                     $catalog["keywords"]:
-                    ($t?\Lib\Helper::parseThroughTemplate($t, ["name"=>$catalog["name"]]):$catalog["name"]);
+                    ($t?\Lib\Helper::parseThroughTemplate($t, ["name"=>$catalog["name"]]):$catalog["name"]);*/
             }
             if(!$common_data["page"]["description"]) {
-                $t = \Lib\App::get("settings")->description_category_template;
+                $common_data["page"]["description"] = $catalog["description"]? $catalog["description"]:$catalog["name"];
+                /*$t = \Lib\App::get("settings")->description_category_template;
                 $common_data["page"]["description"] = $catalog["description"]?
                     $catalog["description"]:
-                    ($t?\Lib\Helper::parseThroughTemplate($t, ["name"=>$catalog["name"]]):$catalog["name"]);
+                    ($t?\Lib\Helper::parseThroughTemplate($t, ["name"=>$catalog["name"]]):$catalog["name"]);*/
             }
 
             $common_data["page"]["h1"] = $catalog["name2"]?$catalog["name2"]:$catalog["name"];

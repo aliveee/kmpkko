@@ -68,16 +68,19 @@ class Good extends \Action\Base
             $common_data = $site->getCommonFrontendData();
 
             if(!$common_data["page"]["title"]) {
-                $t = \Lib\App::get("settings")->title_good_template;
-                $common_data["page"]["title"] = $good["title"]?$good["title"]:($t?str_replace("{unit}",$good["unit"],str_replace("{price}",intval($good["price"]),str_replace("{name}",$good["name"],$t))):$good["name"]);
+                $common_data["page"]["title"] = $good["title"]?$good["title"]:$good["name"];
+                /*$t = \Lib\App::get("settings")->title_good_template;
+                $common_data["page"]["title"] = $good["title"]?$good["title"]:($t?str_replace("{unit}",$good["unit"],str_replace("{price}",intval($good["price"]),str_replace("{name}",$good["name"],$t))):$good["name"]);*/
             }
             if(!$common_data["page"]["keywords"]) {
-                $t = \Lib\App::get("settings")->keywords_good_template;
-                $common_data["page"]["keywords"] = $good["keywords"]?$good["keywords"]:($t?str_replace("{unit}",$good["unit"],str_replace("{price}",intval($good["price"]),str_replace("{name}",$good["name"],$t))):$good["name"]);
+                $common_data["page"]["keywords"] = $good["keywords"]?$good["keywords"]:$good["name"];
+                /*$t = \Lib\App::get("settings")->keywords_good_template;
+                $common_data["page"]["keywords"] = $good["keywords"]?$good["keywords"]:($t?str_replace("{unit}",$good["unit"],str_replace("{price}",intval($good["price"]),str_replace("{name}",$good["name"],$t))):$good["name"]);*/
             }
             if(!$common_data["page"]["description"]) {
-                $t = \Lib\App::get("settings")->description_good_template;
-                $common_data["page"]["description"] = $good["description"]?$good["description"]:($t?str_replace("{unit}",$good["unit"],str_replace("{price}",intval($good["price"]),str_replace("{name}",$good["name"],$t))):$good["name"]);
+                $common_data["page"]["description"] = $good["description"]?$good["description"]:$good["name"];
+                /*$t = \Lib\App::get("settings")->description_good_template;
+                $common_data["page"]["description"] = $good["description"]?$good["description"]:($t?str_replace("{unit}",$good["unit"],str_replace("{price}",intval($good["price"]),str_replace("{name}",$good["name"],$t))):$good["name"]);*/
             }
 
             $this->pass(
