@@ -5,6 +5,9 @@ header("Content-Type: text/html; charset=utf-8");
 <html lang="en">
 <head>
     <title><?=@$page["title"]?></title>
+    <meta name="keywords" content='<?=@$page["keywords"]?>' />
+    <meta name="description" content='<?=@$page["description"]?>' />
+
     <!--Required meta tags-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
