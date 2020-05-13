@@ -3,6 +3,7 @@
 namespace Action;
 
 use Lib\Site;
+use Model\Common\Article;
 
 class Index extends \Action\Base
 {
@@ -15,7 +16,8 @@ class Index extends \Action\Base
                 array(
                     "banners" => (new \Model\Common\Banner())->getMain(5),
                     "catalog_menu" => (new \Model\Common\Catalog())->getMenu(true),
-                    "page_type"=>"home"
+                    "page_type"=>"home",
+                    "articles"=>(new Article())->getMain()
                 )
             )
         );

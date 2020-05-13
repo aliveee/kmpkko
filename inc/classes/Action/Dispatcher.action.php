@@ -17,7 +17,10 @@ class Dispatcher extends \Action\Base
         if (!$page_action->execute()) {
             $catalog_action = new Catalog();
             if (!$catalog_action->execute()) {
-                $page_action->gotoErrorPage();
+                $article_action = new Articles();
+                if (!$article_action->execute()) {
+                    $page_action->gotoErrorPage();
+                }
             }
         }
     }

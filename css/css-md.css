@@ -108,4 +108,11 @@
     .product-content{
         padding:2rem 0;
     }
+
+    .articles-item{
+        margin-bottom:1rem
+    }
+    .articles__all {
+        margin-top:1rem;
+    }
 }

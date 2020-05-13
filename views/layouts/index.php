@@ -6,6 +6,7 @@ include DOCUMENT_ROOT.'/views/common/about.php';
 include DOCUMENT_ROOT.'/views/common/map.php';
 include DOCUMENT_ROOT.'/views/common/works.php';
 include DOCUMENT_ROOT.'/views/common/request.php';
+include DOCUMENT_ROOT.'/views/common/articles-main.php';
 
 $content = ob_get_clean();
 

@@ -6,6 +6,7 @@
   <!--<a href="reviews.php" style="background-position:0 -1632px;">Отзывы</a>-->
   <!--<ba href="index_specials.php" style="background-position:0 -928px;">Спецпредл. на главной</a-->
   <a href="bnr.php" style="background-position:0 -96px;">Баннеры</a>
+    <a href="articles.php" style="background-position:0 -96px;">Статьи</a>
   <!--<ba href="articles.php" style="background-position:0 -1312px;">Статьи</a>-->
   <!--<a href="news.php" style="background-position:0 -416px;">Новости</a>
     <a href="articles.php" style="background-position:0 -416px;">Статьи</a>
