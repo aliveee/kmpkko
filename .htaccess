@@ -9,22 +9,9 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 #sitemap
 RewriteRule ^sitemap.xml sitemap_xml/
-#RewriteRule ^sitemap(\d).xml sitemap_xml/$1/
-RewriteRule ^stranici.xml stranici_xml/
-RewriteRule ^tovary.xml tovary_xml/
-RewriteRule ^tovary(\d).xml tovary_xml/$1/
-
-RewriteRule ^tunnel/$ tunnel88.php?$1 [L,QSA]
-
-RewriteRule ^populyarnye-tovary/(.*)$ hits/$1
-RewriteRule ^novinki/(.*)$ latest/$1
-RewriteRule ^akcii-i-skidki/(.*)$ promo/$1
 
 #RewriteCond %{HTTP_HOST} ^www\.(.*)$
 #RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
-
-RewriteCond %{HTTP_HOST} ^www.tvoyinstrument.ru$ [NC]
-RewriteRule ^(.*)$ https://tvoyinstrument.ru$1 [R=301,L]
 
 #редирект на слэш
 RewriteCond %{REQUEST_URI} !\?
