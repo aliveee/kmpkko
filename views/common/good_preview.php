@@ -1,7 +1,7 @@
 <div class="preview">
     <div class="d-flex w-100">
         <div class="preview__img">
-            <img src="/uploads/catalog/180x204/<?=$good["id"]?>.jpg" alt="">
+            <img src="/uploads/good/180x204/<?=$good["id"]?>.jpg" alt="">
         </div>
         <div class="preview__info">
             <a href="<?=\Lib\GoodHelper::GetUrl($good['c_path'],$good['c_link'],$good['link'])?>" class="preview__title"><?=$good['name']?></a>
