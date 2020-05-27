@@ -11,7 +11,9 @@ class Projects extends \Action\Base
         $breadcrumbs = ["Главная"=>"/",'Проекты'=>'/projects/'];
         $projects = (new \Model\Base(PRX."project"))->getAllWhere("hide=0","sort,date_created desc,name");
         foreach($projects as $_k=>$_project){
-            if(file_exists($img = '/uploads/project/'.$_project['id'].'.jpg')){
+            $img = '/uploads/project/'.$_project['id'].'.jpg';
+            //if(file_exists($img))
+            {
                 $projects[$_k]['images'][] = $img;
             }
             $files = glob(DOCUMENT_ROOT . '/uploads/project/'.$_project['id'].'_*.*');

@@ -1,4 +1,5 @@
 <div class="works row"><?
+    //print_r($projects);
     if($projects)
     foreach ($projects as $_project)
         if(count($_project['images'])) {
