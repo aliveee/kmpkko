@@ -15,4 +15,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
         integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
 <!--Optional JavaScript-->
-<script src="/js/js.js"></script>
+<script src="/js/js.js"></script><?
+if(is_array($js))
+echo implode('',$js);

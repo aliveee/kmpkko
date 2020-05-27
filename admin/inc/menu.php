@@ -3,6 +3,7 @@
 	ob_start();	?>	
 	<a href="pages.php" style="background-position:0 -2593px;" top_menu="pages">Страницы</a>
   <a href="catalog.php" style="background-position:0 -928px;" top_menu="catalog">Каталог</a>
+    <a href="projects.php" style="background-position:0 -2593px;" >Проекты</a>
   <!--<a href="reviews.php" style="background-position:0 -1632px;">Отзывы</a>-->
   <!--<ba href="index_specials.php" style="background-position:0 -928px;">Спецпредл. на главной</a-->
   <a href="bnr.php" style="background-position:0 -96px;">Баннеры</a>

@@ -23,8 +23,10 @@ class Base
      * Base constructor.
      * @param string $table
      */
-    public function __construct()
+    public function __construct($table="")
     {
+        if($table)
+            $this->table = $table;
     }
 
     /**
