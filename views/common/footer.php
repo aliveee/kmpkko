@@ -51,7 +51,9 @@
                                     <a href="<?=$settings->social_fb?>" class="social"><img src="/img/icons/fb.svg"/></a>
                                 </div>
                                 <div class="mt-5 d-none d-lg-block">
-                                    <a htef="#" class="btn btn-primary">Запросить цену</a>
+                                    <a href="/callback/" class="btn btn-primary" data-toggle="modal" data-target="#feedback-form">
+                                        Запросить цену
+                                    </a>
                                 </div>
                             </div>
                         </div>

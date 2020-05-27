@@ -6,7 +6,7 @@
                     <div class="gallery__item-title">
                         Выполним цикл работ по пуску-наладке котельных на биотопливе
                     </div>
-                    <a class="gallery__item-button" href="#">
+                    <a href="/callback/" class="gallery__item-button" data-toggle="modal" data-target="#feedback-form">
                         Запросить цену
                     </a>
                 </div>

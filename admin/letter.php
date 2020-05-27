@@ -7,8 +7,6 @@ $rubric = 'Сообщения';
 $id = (int)@$_GET['id'];
 $ids = $_GET['ids'] ? (array)$_GET['ids'] : array($id);
 $search = clean(@$_GET['search']);
-$top_menu='orders';
-
 $k = @$_SESSION[$tbl.'_k'] ? $_SESSION[$tbl.'_k'] : 50;
 $p = @$_GET['p'] ? $_GET['p'] : 1;
 $sort = setSort('date DESC');

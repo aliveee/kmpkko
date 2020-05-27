@@ -26,6 +26,7 @@ header("Content-Type: text/html; charset=utf-8");
     <? include DOCUMENT_ROOT.'/views/common/header.php' ?>
     <?=$content?>
     <? include DOCUMENT_ROOT.'/views/common/footer.php' ?>
+    <? include DOCUMENT_ROOT.'/views/common/service.php'?>
     <? include DOCUMENT_ROOT.'/views/common/scripts.php'?>
 </body>
 </html>
