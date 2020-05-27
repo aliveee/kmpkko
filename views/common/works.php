@@ -1,23 +1,22 @@
-<div class="works bg-light-grey">
-    <div class="container">
-        <div class="h">Примеры реализованных проектов в категории “котлы”</div>
-        <div class="works__gallery">
-            <div class="works__item">
-                <div class="works__item-image">
-                    <img src="/img/works/1.jpg" />
-                </div>
-                <div class="works__item-title">
-                    Котельная на отходах спичечного производства в г. лиски
-                </div>
-            </div>
-            <div class="works__item">
-                <div class="works__item-image">
-                    <img src="/img/works/2.jpg" />
-                </div>
-                <div class="works__item-title">
-                    Отчепоклиться насявно интишком уваффа
-                </div>
-            </div>
+<?
+if(count($projects)) {
+    ?>
+    <div class="works bg-light-grey">
+        <div class="container">
+            <div class="h">Реализованные проекты</div>
+            <div class="works__gallery"><?
+                foreach($projects as $_project) {
+                    ?>
+                    <div class="works__item">
+                        <div class="works__item-image">
+                            <img src="/uploads/project/<?=$_project['id']?>.jpg"/>
+                        </div>
+                        <div class="works__item-title">
+                            <?=$_project['name']?>
+                        </div>
+                    </div><?
+                }
+            ?></div>
         </div>
-    </div>
-</div>
+    </div><?
+}

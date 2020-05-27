@@ -1,4 +1,4 @@
-<div class="works row"><?
+<div class="works projects row"><?
     //print_r($projects);
     if($projects)
     foreach ($projects as $_project)
@@ -12,13 +12,13 @@
                                 <img src="<?=$_image?>" title="<?=$_project['name']?>"/>
                             </div>
                             <div class="works__item-title">
-                                Котельная на отходах спичечного производства в г. лиски
+                                <?=$_project['name']?>
                             </div>
                         </a>
                     </div><?
                 }else{
                     ?><a href="<?=$_image?>" class="d-none" data-fancybox="good-images<?=$_project['id']?>">
-                        <img src="<?=$_image?>" title="<?=$_project['name']?>"/>
+
                     </a><?
                 }
                 $i++;

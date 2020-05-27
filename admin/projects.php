@@ -118,6 +118,11 @@ switch ($show) {
                                value="1"></td>
                 </tr>
                 <tr>
+                    <th>На главной</th>
+                    <td><input name="is_main" type="checkbox" <?= $row['is_main'] ? 'checked' : '' ?> style="width:auto;"
+                               value="1"></td>
+                </tr>
+                <tr>
                     <td align="center" colspan="2"><?= btnAction('Save,Apply,Cancel') ?></td>
                 </tr>
             </table>
@@ -139,6 +144,11 @@ switch ($show) {
                             title="Скрыть/Показать изображения"></th>
                 <th sort="<?= getSort('name') ?>">Название</th>
                 <th sort="<?= getSort('hide') ?>">Скрыть
+                    <div align="center"><input type="checkbox"
+                                               onClick="event.cancelBubble=true; if(sure()) { setCbTable(this,true); } else  return false;">
+                    </div>
+                </th>
+                <th sort="<?= getSort('is_main') ?>">На главной
                     <div align="center"><input type="checkbox"
                                                onClick="event.cancelBubble=true; if(sure()) { setCbTable(this,true); } else  return false;">
                     </div>
@@ -171,7 +181,10 @@ switch ($show) {
                     <td align="center"><input type="checkbox" <?= ($row['hide'] ? 'checked' : '') ?>
                                               onClick="toAjax('?action=redone&id=<?= $id ?>&field=hide&value='+(this.checked ? 1 : 0))">
                     </td>
-                    <td><?= lnkAction(!$childs && $id_catalog ? 'Red,Del' : 'Red,Del', '&id_catalog=' . $catalogs[$row['id']]) ?></td>
+                    <td align="center"><input type="checkbox" <?= ($row['is_main'] ? 'checked' : '') ?>
+                                              onClick="toAjax('?action=redone&id=<?= $id ?>&field=is_main&value='+(this.checked ? 1 : 0))">
+                    </td>
+                    <td><?= lnkAction('Move,Red,Del', '&id_catalog=' . $catalogs[$row['id']]) ?></td>
                 </tr>
             <? } ?>
             <tr>

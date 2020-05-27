@@ -13,12 +13,13 @@ class Index extends \Action\Base
 
         $this->pass(
             array_merge($common_data,
-                array(
+                [
                     "banners" => (new \Model\Common\Banner())->getMain(5),
                     "catalog_menu" => (new \Model\Common\Catalog())->getMenu(true),
                     "page_type"=>"home",
-                    "articles"=>(new Article())->getMain()
-                )
+                    "articles"=>(new Article())->getMain(),
+                    "projects" => (new \Model\Base(PRX."project"))->getAllWhere("hide=0 and is_main=1","sort,date_created desc,name")
+                ]
             )
         );
         $this->displayLayout('index');
