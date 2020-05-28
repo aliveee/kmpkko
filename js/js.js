@@ -36,7 +36,7 @@ $(function(){
         $(this).parents('.closable').toggleClass('opened');
     })
 
-    $('input[data-inputmask]').inputmask();
+    $('.masked-input').inputmask();
     set_ajax();
 })
 

@@ -36,7 +36,8 @@ class Feedback extends \Action\Base
 
         $this->pass(array(
             "result" => $id>0,
-            "message"=>$id>0?"Сообщение отправлено":"Произошла ошибка. Попробуйте через некоторое время"
+            "message"=>$id>0?"Сообщение отправлено":"Произошла ошибка. Попробуйте через некоторое время",
+            "reset_form"=>$id>0
         ));
         $this->display();
     }

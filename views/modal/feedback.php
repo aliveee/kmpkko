@@ -20,7 +20,7 @@
         </div>
         <div class="form-group">
             <label for="name">Телефон*</label>
-            <input type="text" class="form-control masked-input" id="phone" name="phone" required placeholder="" data-inputmask="'mask': '+7(999) 99-99-999'" value="<?=@$user["phone"]?>" required>
+            <input type="text" class="form-control masked-input" id="phone1" name="phone" required placeholder="" data-inputmask="'mask': '+7(999) 99-99-999'" value="<?=@$user["phone"]?>" required>
         </div>
         <div class="form-group">
             <label for="name">Email*</label>
@@ -28,7 +28,7 @@
         </div>
         <div class="form-group mb-0">
             <label for="comment">Тип оборудования/Комментарий*</label>
-            <textarea class="form-control" id="comment" name="message" placeholder="" required></textarea>
+            <textarea class="form-control" id="comment1" name="message" placeholder="" required></textarea>
         </div>
         <div class="mb-2 mt-3 small"><em>Нажимая кнопку «Отправить», я соглашаюсь с условиями <a href="/politika-konfidencialnosti/">политики конфиденциальности</a> и <a href="/dogovor-oferty/">договора оферты</a></em></div>
     </div>
