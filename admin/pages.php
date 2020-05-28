@@ -14,7 +14,7 @@ switch($action)
 {
 	case 'red':
 		if(!$_POST['link'])
-			$_POST['link'] = '/'.makeUrl($_POST['name']).'.htm';
+			$_POST['link'] = '/'.makeUrl($_POST['name']).'/';
 
         foreach ($_POST['forms'] as $i=>$val)
         {
