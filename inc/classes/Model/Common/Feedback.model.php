@@ -16,9 +16,9 @@ class Feedback extends \Model\Base
      */
     protected $table = PRX.'feedback';
 
-    public function save($name,$email, $phone, $message){
-        $sql = "insert into {$this->table}(name,email, phone, message)
-          values('$name','$email', '$phone', '$message')";
+    public function save($name,$email, $phone, $message, $referer){
+        $sql = "insert into {$this->table}(name,email, phone, message, referer)
+          values('$name','$email', '$phone', '$message', '$referer')";
         //echo $sql;
         $this->query($sql);
         $feedback_id = $this->getInsertId();

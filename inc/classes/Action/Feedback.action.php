@@ -2,6 +2,7 @@
 
 namespace Action;
 
+use Lib\Helper;
 use Lib\Recaptcha;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -24,9 +25,10 @@ class Feedback extends \Action\Base
         {
             $$k = \Lib\Helper::clean($v);
         }
+        $referer = Helper::clean($_SERVER["HTTP_REFERER"]);
         //TODO проверку данных
 
-        $id = $feedback_model->save($name,$email, $phone, $message);
+        $id = $feedback_model->save($name,$email, $phone, $message, $referer);
 
         $this->pass(array("name" => $name, "email"=>$email,"phone"=>$phone,"message"=>$message));
         $html = $this->render(\Lib\App::get('root_directory').'views/email/feedback.php');

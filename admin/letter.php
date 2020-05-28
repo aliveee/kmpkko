@@ -58,6 +58,10 @@ switch($show)
 					<th>Текст</th>
 					<td><?=$row['message']?></td>
 				</tr>
+                <tr>
+                    <th>Источник</th>
+                    <td><a target="_blank" href="<?=$row['referer']?>"><?=$row['referer']?></a></td>
+                </tr>
 				<tr>
 					<th>Комментарий</th>
 					<td><textarea name="note"><?=$row['note']?></textarea></td>
@@ -80,7 +84,9 @@ switch($show)
                 <th sort="<?=getSort('phone')?>">Телефон</th>
                 <th sort="<?=getSort('email')?>">Email</th>
 				<th sort="<?=getSort('text')?>">Текст</th>
+                <th sort="<?=getSort('referer')?>">Источник</th>
 				<th sort="<?=getSort('note')?>">Комментарий</th>
+
 				<th></th>
 			</tr>
 		<? 
@@ -95,6 +101,7 @@ switch($show)
                     <td><?=$row['phone']?></td>
                     <td><?=$row['email']?></td>
 					<td><?=$row['message']?></td>
+                    <td><a target="_blank" href="<?=$row['referer']?>"><?=$row['referer']?></a></td>
 					<td><?=nl2br($row['note'])?></td>
 					<td><?=lnkAction('Red,Del')?></td>
 				</tr>
