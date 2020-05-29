@@ -45,10 +45,18 @@
                                     <span class="header__contact location" ><?=$settings->contact_address?></span>
                                 </div>
                                 <div class="mt-4">
-                                    <a target="_blank" href="<?=$settings->social_insta?>" class="social"><img src="/img/icons/inst.svg"/></a>
-                                    <a target="_blank" href="<?=$settings->social_youtube?>" class="social"><img src="/img/icons/yout.svg"/></a>
-                                    <a target="_blank" href="<?=$settings->social_vk?>" class="social"><img src="/img/icons/vk.svg"/></a>
-                                    <a target="_blank" href="<?=$settings->social_fb?>" class="social"><img src="/img/icons/fb.svg"/></a>
+                                    <?if($settings->social_insta){?>
+                                        <a target="_blank" href="<?=$settings->social_insta?>" class="social"><img src="/img/icons/inst.svg"/></a>
+                                    <?}?>
+                                    <?if($settings->social_youtube){?>
+                                        <a target="_blank" href="<?=$settings->social_youtube?>" class="social"><img src="/img/icons/yout.svg"/></a>
+                                    <?}?>
+                                    <?if($settings->social_vk){?>
+                                        <a target="_blank" href="<?=$settings->social_vk?>" class="social"><img src="/img/icons/vk.svg"/></a>
+                                    <?}?>
+                                    <?if($settings->social_fb){?>
+                                        <a target="_blank" href="<?=$settings->social_fb?>" class="social"><img src="/img/icons/fb.svg"/></a>
+                                    <?}?>
                                 </div>
                                 <div class="mt-5 d-none d-lg-block">
                                     <a href="/callback/" class="btn btn-primary" data-toggle="modal" data-target="#feedback-form">
