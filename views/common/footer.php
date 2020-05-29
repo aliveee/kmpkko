@@ -42,7 +42,7 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-12">
                                 <div>
-                                    <a class="header__contact location" href="javascript:;"><?=$settings->contact_address?></a>
+                                    <span class="header__contact location" ><?=$settings->contact_address?></span>
                                 </div>
                                 <div class="mt-4">
                                     <a target="_blank" href="<?=$settings->social_insta?>" class="social"><img src="/img/icons/inst.svg"/></a>
