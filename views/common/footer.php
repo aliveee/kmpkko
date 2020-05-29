@@ -45,10 +45,10 @@
                                     <a class="header__contact location" href="javascript:;"><?=$settings->contact_address?></a>
                                 </div>
                                 <div class="mt-4">
-                                    <a href="<?=$settings->social_insta?>" class="social"><img src="/img/icons/inst.svg"/></a>
-                                    <a href="<?=$settings->social_youtube?>" class="social"><img src="/img/icons/yout.svg"/></a>
-                                    <a href="<?=$settings->social_vk?>" class="social"><img src="/img/icons/vk.svg"/></a>
-                                    <a href="<?=$settings->social_fb?>" class="social"><img src="/img/icons/fb.svg"/></a>
+                                    <a target="_blank" href="<?=$settings->social_insta?>" class="social"><img src="/img/icons/inst.svg"/></a>
+                                    <a target="_blank" href="<?=$settings->social_youtube?>" class="social"><img src="/img/icons/yout.svg"/></a>
+                                    <a target="_blank" href="<?=$settings->social_vk?>" class="social"><img src="/img/icons/vk.svg"/></a>
+                                    <a target="_blank" href="<?=$settings->social_fb?>" class="social"><img src="/img/icons/fb.svg"/></a>
                                 </div>
                                 <div class="mt-5 d-none d-lg-block">
                                     <a href="/callback/" class="btn btn-primary" data-toggle="modal" data-target="#feedback-form">
