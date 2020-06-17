@@ -17,7 +17,7 @@ switch($action)
 		$_POST['ids_catalog'] = implode(',', $_POST['ids_catalog']);
 		$id = uniUpdate($id);
 		if(!$_POST['link'])
-			update($tbl, "link='{$link}'", $id);
+			update($tbl, "link=''", $id);
 		
 		if(@$_POST['del_file1'])
 		{
