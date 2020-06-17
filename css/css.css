@@ -256,7 +256,8 @@ nav a:hover{
 }
 .about__logo-wrp{
     display: flex;
-    align-items:center;
+    align-items:start;
+    padding-top:1rem;
     justify-content: center;
     background: #D8E1E6;
     width:256px;
