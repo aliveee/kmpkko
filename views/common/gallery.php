@@ -7,11 +7,13 @@
                 <div class="col">
                     <div class="gallery__item-title">
                         <?=$_banner["text"]?>
-                    </div>
-                    <a class="gallery__item-button" href="<?=$_banner['linkarticles.php']?>">
-                        <?=$_banner["button"]?>
-                    </a>
-                </div>
+                    </div><?
+                    if($_banner['link']) {
+                        ?><a class="gallery__item-button" href="<?= $_banner['link'] ?>">
+                            <?= $_banner["button"] ?>
+                        </a><?
+                    }
+                ?></div>
             </div>
         </div>
     </div><?
