@@ -529,7 +529,11 @@ footer{
 .category-info{
     margin-bottom:3rem;
 }
-
+.category-info__img{
+    float:left;
+    padding-right:3rem;
+    padding-bottom:1rem;
+}
 .preview{
     display: flex;
     flex-wrap: wrap;

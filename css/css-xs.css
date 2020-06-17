@@ -14,4 +14,8 @@
         background-color:#464A4D;
         padding:1rem 0 0 0;
     }
+    .category-info__img{
+        float:none;
+        padding-right:0;
+    }
 }
