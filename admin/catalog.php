@@ -175,6 +175,10 @@ switch($show)
 					<td><input name="hide" type="checkbox" <?=$row['hide'] ? 'checked' : ''?> style="width:auto;" value="1"></td>
 				</tr>
                 <tr>
+                    <th>Показывать товары</th>
+                    <td><input name="show_goods" type="checkbox" <?=$row['show_goods'] ? 'checked' : ''?> style="width:auto;" value="1"></td>
+                </tr>
+                <tr>
                     <th>На главной</th>
                     <td><input name="is_main" type="checkbox" <?=$row['is_main'] ? 'checked' : ''?> style="width:auto;" value="1"></td>
                 </tr>

@@ -114,7 +114,7 @@ class Catalog extends \Action\Base
                         "catalog_home" => $catalog_home,
                         "active_catalog_ids" => $active_catalog_ids,
                         "catalog"=>$catalog,
-                        "goods" => $goods,
+                        "goods" => $catalog["show_goods"]?$goods:[],
                         "goods_count" => $goods_count,
                         "breadcrumbs" => $breadcrumbs,
                         "subcategories"=>$subcategories,
