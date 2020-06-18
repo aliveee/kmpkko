@@ -144,6 +144,9 @@ nav li.active{
 .nav__hidden.active{
     border:none;
 }
+li.nav__hidden {
+    border: 0;
+}
 nav a{
     font-weight: 600;
     font-size: 14px;
