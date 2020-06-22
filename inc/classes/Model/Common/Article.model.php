@@ -35,6 +35,6 @@ class Article extends \Model\Base
     }
 
     public function getMain($limit=3){
-        return $this->getAll(" SELECT * FROM {$this->table} WHERE `is_main` = 1 ORDER BY date desc limit $limit");
+        return $this->getAll(" SELECT * FROM {$this->table} WHERE `is_main` = 1 and hide=0 ORDER BY date desc limit $limit");
     }
 }
