@@ -103,7 +103,7 @@ switch($show)
 	?>
 		<form action="?id=<?=$id?>&action=red" method="post" enctype="multipart/form-data" target="iframe">
            <input type="hidden" name="use_date" value="1" />
-			<table class="red" width="850">
+			<table class="red" width="1100">
 				<tr>
 					<th>Расположение</th>
 					<td><?=dllTree("SELECT id,name,id_parent FROM {$prx}{$tbl} ORDER BY sort,id", 'class="chosen" data-placeholder="Выберите раздел" name="id_parent" style="width:auto;"', $row['id_parent'], array(0, 'Корневая'), $id, 0, 0, ".&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;")?></td>
@@ -136,11 +136,11 @@ switch($show)
 				</tr>
 				<tr>
 					<th>Текст</th>
-					<td><textarea name="text" toolbar="medium" rows="15"><?=$row['text']?></textarea></td>
+					<td><textarea name="text" toolbar="medium" rows="35"><?=$row['text']?></textarea></td>
 				</tr>
                 <tr>
                     <th>Текст превью</th>
-                    <td><textarea name="introtext" toolbar="medium" rows="15"><?=$row['introtext']?></textarea></td>
+                    <td><textarea name="introtext" toolbar="medium" rows="35"><?=$row['introtext']?></textarea></td>
                 </tr>
 				<!--tr>
 					<th>Бонус</th>

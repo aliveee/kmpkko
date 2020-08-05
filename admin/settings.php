@@ -133,7 +133,7 @@ switch($show)
 	
 	default: // просмотр
 	?>	<form action="?action=redall" method="post" enctype="multipart/form-data" target="iframe">
-			<table class="red" width="700">
+			<table class="red" width="900">
 			<?	$res = sql("SELECT * FROM {$prx}{$tbl} WHERE ".(@$spec_filter ? $spec_filter : "hide='0'")." ORDER BY sort,id");
 				while($row = mysql_fetch_assoc($res))	
 				{	
@@ -166,7 +166,7 @@ switch($show)
 								<?	break;
 			
 								case 'ck_medium':	?>
-									<textarea name="<?=$id?>" toolbar="medium" rows="15" style="width:570px;"><?=$value?></textarea>
+									<textarea name="<?=$id?>" toolbar="medium" rows="35" style="width:570px;"><?=$value?></textarea>
 								<?	break;
 			
 								case 'datetime':

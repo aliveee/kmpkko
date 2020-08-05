@@ -257,7 +257,7 @@ switch ($show) {
         <form action="?id=<?= $id ?>&action=red" method="post" id="frmRed" enctype="multipart/form-data" target="iframe"
               onSubmit="$('#ids_uslugi option').attr('selected', 'true');$('#ids_companions option').attr('selected', 'true');$('#ids_similar option').attr('selected', 'true');$('#ids_model option').attr('selected', 'true');$('#ids_recommend option').attr('selected', 'true');$('#ids_rashodka option').attr('selected', 'true');">
             <input type="hidden" name="use_date" value="1"/>
-            <table class="red" width="900">
+            <table class="red" width="1100">
                 <tr>
                     <th>Раздел каталога</th>
                     <td><?=dllTree("SELECT id, name, id_parent FROM {$prx}catalog ORDER BY sort,id", 'class="chosen" data-placeholder="Выберите раздел" name="id_catalog" id="id_catalog" style="width:98%;" onChange="toAjax(\'?action=features&id='.$id.'&id_catalog=\'+this.value)"', $id?$row['id_catalog']:$_GET["id_catalog"], '', null, 0, 0, ".&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;")?></td>
@@ -313,11 +313,11 @@ switch ($show) {
                 </tr>
                 <tr>
                     <th>Вводное описание</th>
-                    <td><textarea name="introtext" toolbar="medium" rows="15"><?= $row['introtext'] ?></textarea></td>
+                    <td><textarea name="introtext" toolbar="medium" rows="35"><?= $row['introtext'] ?></textarea></td>
                 </tr>
                 <tr>
                     <th>Описание</th>
-                    <td><textarea name="text" toolbar="medium" rows="15"><?= $row['text'] ?></textarea></td>
+                    <td><textarea name="text" toolbar="medium" rows="35"><?= $row['text'] ?></textarea></td>
                 </tr>
                 <tr>
                     <th>Характеристики</th>
@@ -433,6 +433,7 @@ switch ($show) {
             $res = sql($sqlmain . ' LIMIT ' . ($p - 1) * $k . ', ' . $k);
             while ($row = mysql_fetch_assoc($res)) {
                 $id = $row['id'];
+                $catalog = getRow("select * from {$prx}catalog where id=".$row["id_catalog"]);
                 $link = $row['link'];
                 $img = $row['img'];
                 ?>
@@ -473,7 +474,7 @@ switch ($show) {
                     <td align="center"><input type="checkbox" <?= ($row['hide'] ? 'checked' : '') ?>
                                               onClick="toAjax('?action=redone&id=<?= $id ?>&field=hide&value='+(this.checked ? 1 : 0))">
                     </td>
-                    <td><a href="/<?= $row['link'] ?>/">открыть</a></td>
+                    <td><a href="/catalog/<?=$catalog['path']?$catalog['path'].'/':''?><?=$catalog['link']?>/<?= $row['link'] ?>/">открыть</a></td>
                     <td><?= lnkAction(!$childs && $id_catalog ? 'Red,Del' : 'Red,Del', '&id_catalog=' . $catalogs[$row['id']]) ?></td>
                 </tr>
             <? } ?>
