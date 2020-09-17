@@ -32,9 +32,3 @@
     .nav__hidden.active ul li{
     }
 }
-
-@media (min-width: 1200px){
-    .container {
-        max-width: 90%;
-    }
-}

@@ -12,7 +12,7 @@
             <div class="menu-mobile__scroll">
                 <div class="header__top bg-grey">
                     <div class="container">
-                        <div class="row align-items-center justify-content-start">
+                        <div class="row align-items-center justify-content-end">
                             <div class="col-auto">
                                 <a class="header__contact phone" href="tel:<?=$settings->contact_phone1?>"><?=$settings->contact_phone1?></a>
                             </div>
@@ -71,7 +71,7 @@
                                         if (count($menu) > 1) {
                                             $menu_last = @$menu[count($menu) - 1];
                                             ?>
-                                            <li class="active"><a
+                                            <li class="_active"><a
                                                     href="<?= $menu_last["link"] ?>"><?= $menu_last["name"] ?></a>
                                             </li><?
                                         }
