@@ -123,6 +123,8 @@ class Catalog extends \Action\Base
                         "current_catalog_page"=>$current_catalog_page,
                         "catalog_pages"=>$catalog_pages,
                         "page_type"=>"category",
+                        "projects" => (new \Model\Base(PRX."project"))->getAllWhere("hide=0 and is_main=1","sort,date_created desc,name"),
+
                     )
                 )
             );

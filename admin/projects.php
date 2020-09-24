@@ -77,6 +77,10 @@ switch ($show) {
                     <td><input name="name" value='<?= $row['name'] ?>'></td>
                 </tr>
                 <tr>
+                    <th>Место</th>
+                    <td><input name="location" value='<?= $row['location'] ?>'></td>
+                </tr>
+                <tr>
                     <th>Изображение</th>
                     <td>
                         <span class="cw">0.</span> <?= fileUpload("/uploads/{$tbl}/{$id}.jpg", 'name="file" style="width:80%"') ?>

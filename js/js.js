@@ -13,18 +13,27 @@ $(function(){
 
     $('.works__gallery').slick({
         infinite: true,
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
-        fade: true,
+        fade: false,
         autoplay: false,
         arrows:true,
         dots:false,
         responsive: [
             {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
                 breakpoint: 767,
                 settings: {
                     dots: true,
-                    arrows:false
+                    arrows:false,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
                 }
             }
             ]

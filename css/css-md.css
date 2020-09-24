@@ -51,7 +51,7 @@
         margin-bottom:0!important;
     }
     .works .slick-dots{
-        bottom:1rem;
+        bottom:-2rem;
     }
     .works .slick-dots li button{
         display: flex;

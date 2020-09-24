@@ -310,19 +310,33 @@ nav a:hover{
 
 .works__item-title{
     display: flex;
-    align-items: center;
-    min-height: 120px;
-    background: #464A4D;
+    _align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 112px;
+    background: #fff;
     padding:20px 40px 20px 160px;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 18px;
+    color: #464A4D;
     text-transform: uppercase;
 }
+.works__item-location{
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: #464A4D;
+    padding-left:1.5rem;
+    background: url(/img/icons/location-black.svg) no-repeat left center;
+    background-size: 1rem;
+    display: flex;
+    align-items: center;
+    text-transform: none;
+}
 .projects .works__item-title {
-    padding: 20px 40px;
+    padding: 1rem;
 }
 .projects .works__item{
     display: block;
@@ -332,14 +346,15 @@ nav a:hover{
     text-decoration: none;
 }
 .projects .works__item{
-    box-shadow: 0px 4px 8px rgba(73, 75, 76, 0.12), 0px 0px 2px rgba(73, 75, 76, 0.08);
+    /*box-shadow: 0px 4px 8px rgba(73, 75, 76, 0.12), 0px 0px 2px rgba(73, 75, 76, 0.08);*/
+    box-shadow:0px 0px 2px rgba(73, 75, 76, 0.08), 0px 4px 8px rgba(73, 75, 76, 0.12);
 }
 .works__gallery{
     position: relative;
 }
 .works__gallery .slick-next,  .works__gallery .slick-prev{
     top:unset;
-    bottom:20px;
+    bottom:-62px;
     width: 40px;
     height: 40px;
     background: #FF6600;
@@ -351,13 +366,13 @@ nav a:hover{
     content:unset;
 }
 .works__gallery .slick-prev{
-    left:40px;
+    left:1rem;
     right:unset;
     z-index: 1;
     background-image: url('/img/icons/left.svg')!important;;
 }
 .works__gallery .slick-next{
-    left:96px;
+    left:72px;
     right:unset;
     z-index: 1;
     background-image: url('/img/icons/right.svg')!important;
@@ -366,6 +381,19 @@ nav a:hover{
     background: #FF6600;
     background-repeat:  no-repeat;
     background-position: center;
+}
+
+.works__all{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    color:#2F3133;
+    text-decoration:none;
+}
+
+.works__all:hover{
+    text-decoration: underline;
 }
 
 .request{
