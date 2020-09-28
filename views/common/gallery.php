@@ -36,7 +36,7 @@ if($banners) {
                             }
                             ?></div>
                     </div>
-                    <img src="/uploads/ebnr/<?= $_banner["img_m"] ?>" />
+                    <img src="/uploads/ebnr/<?= $_banner["img_m"]?$_banner["img_m"]:$_banner["img"] ?>" />
                 </div><?
             }
         ?></div>
