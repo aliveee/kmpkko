@@ -22,7 +22,13 @@ switch($action)
 		if(@$_POST['del_file1'])
 		{
 			upfile("../uploads/{$tbl}/".getField("SELECT img FROM {$prx}{$tbl} WHERE id='{$id}'"), $_FILES['file1'], @$_POST['del_file1']);
+            update($tbl, "img=''", $id);
 		}
+        if(@$_POST['del_file1_m'])
+        {
+            upfile("../uploads/{$tbl}/".getField("SELECT img FROM {$prx}{$tbl} WHERE id='{$id}'"), $_FILES['file1_m'], @$_POST['del_file1_m']);
+            update($tbl, "img_m=''", $id);
+        }
 		
 		if($_FILES['file1']['name'])
 		{
@@ -32,6 +38,14 @@ switch($action)
 			  if ($_FILES['file1'])
 				update($tbl, "img='{$id}.{$ext}'", $id);
 		}
+        if($_FILES['file1_m']['name'])
+        {
+            $ext=pathinfo($_FILES['file1_m']['name'], PATHINFO_EXTENSION);
+
+            upfile("../uploads/{$tbl}/{$id}_m.{$ext}", $_FILES['file1_m'], @$_POST['del_file1_m']);
+            if ($_FILES['file1_m'])
+                update($tbl, "img_m='{$id}_m.{$ext}'", $id);
+        }
 		//upfile("../uploads/{$tbl}/{$id}.swf", $_FILES['file2'], @$_POST['del_file2']);
 
 		?><script>top.location.href = "?id=<?=$id?>&id_parent=<?=@$_POST['id_parent'] ? (int)$_POST['id_parent'] : $id?>&rand=<?=mt_rand()?>";</script><?
@@ -71,6 +85,10 @@ switch($show)
                 <tr>
                     <th>Изображение</th>
                     <td><?=fileUpload("/uploads/{$tbl}/{$row['img']}", 'name="file1" style="width:80%"')?></td>
+                </tr>
+                <tr>
+                    <th>Моб. изображение</th>
+                    <td><?=fileUpload("/uploads/{$tbl}/{$row['img_m']}", 'name="file1_m" style="width:80%"')?></td>
                 </tr>
                 <tr>
                     <th>Название</th>
