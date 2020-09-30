@@ -1,6 +1,8 @@
 <?
 if($banners) {
-    ?><div class="container p-0 pl-sm-3 pr-sm-3">
+    ?>
+    <div class="bg-light-grey">
+    <div class="container p-0 pl-sm-3 pr-sm-3">
         <div class="gallery d-none d-sm-block"><?
             foreach ($banners as $_banner) {
                 ?>
@@ -40,5 +42,6 @@ if($banners) {
                 </div><?
             }
         ?></div>
+    </div>
     </div><?
 }
