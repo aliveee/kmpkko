@@ -1,4 +1,4 @@
-<div class="preview">
+<div class="preview h-100">
     <div class="d-flex w-100">
         <div class="preview__img">
             <a href="<?=\Lib\CatalogHelper::GetUrl($subcategory["path"],$subcategory["link"])?>">
